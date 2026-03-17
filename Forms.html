@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <!-- "submit_form.php" -->
+    <form action="" method="POST">
+        <label for="name">Ime:</label>
+         <!-- Ime: -->
+        <input size="40" type="text" id="name" name="name" required placeholder="Ovdje unesi ime"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Lozinka:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Checkboxes -->
+        <label>
+            <input type="checkbox" name="newsletter" value="yes">
+            <label for="sports">Pretplata na newsletter</label>
+            <input type="checkbox" name="interests" value="sports" id="sports">
+            <label for="sports">Interest in Sports</label>
+        </label><br><br>
+
+        <!-- Radio buttons -->
+        <label>
+            <input type="radio" name="gender" value="male">
+            Muško
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">
+            Žena
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other">
+            Ostalo
+        </label>
+        <br><br>
+
+        <!-- select dropdown i textarea -->
+        <label for="country">Zemlja:</label>
+        <select id="country" name="country">
+            <option value="hr">Hrvatska</option>
+            <option value="ba">Bosna i Hercegovina</option>
+            <option value="rs">Srbija<  /option>
+        </select><br><br>
+
+        <label for="message">Poruka:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+</body>
+
+</html>
