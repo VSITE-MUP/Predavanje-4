@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predavanje 4</title>
 </head>
+<style>.plava-slova{
+    color: blue;
+    font-weight: bold;
+}</style>
 <body>
     <h1>Table</h1>
     <table style="border-style: dotted;" border = "2" width = "100" >
-        <tr>
+        <tr style="background-color: aquamarine;">
             <th>Ime</th>
             <th>Prezime</th>
             <th>Godine</th>
@@ -16,19 +20,28 @@
         <tr>
             <th>Marko</th>
             <th>Markovic</th>
-            <th>36</th>
+            <th class="plava-slova">36</th>
         </tr>
         <tr>
             <th>Petar</th>
             <th>Petrovic</th>
-            <th>55</th>
+            <th class="plava-slova">55</th>
         </tr>
         <tr>
             <tfoot>
                 <td colspan = "2"> Ukupno</td>
-                <td> 91</td>
+                <td class="plava-slova"> 91</td>
             </tfoot>
         </tr>
 </table>
+<form action="submit_form.php" method="post">
+  <label for="Ime">Ime:</label><br>
+  <input size="40" type="text" id="name" name="name" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="name" name="email" required><br>
+  <label for="email">Password:</label><br>
+  <input type="password" id="password" name="password" required><br>
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
