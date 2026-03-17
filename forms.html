@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label>
+            <input type="checkbbox" name="newsletter" value="yes">
+            <label  for="sports">Pretplata na newsletter.</label>
+            <input type="checkbox" name="interests" value="sports" id="sports">
+            <label for="sports">Interest in sports</label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
