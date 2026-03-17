@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Tables</title>
+</head>
+<style>
+    .plava-slova {
+        color: blue;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1>Tables</h1>
+    <table border="1" width="50%">
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Godine</th>
+        </tr>
+        <tr>
+            <td>Marko</td>
+            <td>Marković</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Petar</td>
+            <td>Petrović</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Ukupno</td>
+                    <td>46</td>
+                </tr>
+            </tfoot>
+        </tr>
+    </table>
+
+    <!--Tablica sa primjerom rowspan i colspan-->
+    <br><br><br><br>
+    <table border="1" width="50%" style="background-color:blanchedalmond;">
+        <tr style="background-color: red;">
+            <th style="background-color: palegoldenrod;">Ime</th>
+            <th>Prezime</th>
+            <th>Godine</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Marko</td>
+            <td>Marković</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Petrović</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">Ukupno</td>
+            <td>46</td>
+        </tr>
+</html>
+</body>
+</html>
