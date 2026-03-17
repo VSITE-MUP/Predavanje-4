@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
 </head>
+<style>
+    /* Stil za plava slova u tablici */
+    .plava-slova{
+        color:blue;
+        font-weight:bold;
+    }
+</style>
 <body>
     <h1>Tables</h1>
-    <table border="1">
+    <!--Jednostavna tablica-->
+    <table border ="1" width="50%" style="background-color:blueviolet;">
         <tr>
             <th>Name</th>
             <th>Age</th>
@@ -23,5 +31,32 @@
             <td>25</td>
             <td>Los Angeles</td>
         </tr>
+        <tr>
+            <tfoot>
+                <td colspan="2" style="text-align:center;">Marin Vinkovic</td>
+                <td>ChiChi</td>
+            </tfoot>
+        </tr>
     </table>
+    <br><br><br><br><br>
+    <!--Tablica sa primjerom rowspan i colspan-->
+    <table border="1" width="50%" style="background-color:blanchedalmond;">
+        <tr style="background-color: aquamarine;">
+            <th style="background-color: lightblue;">Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: lightyellow;">John Doe</td>
+            <td class="plava-slova">30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td class="plava-slova">31</td>
+            <td>Boston</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">Jane Smith</td>
+            <td>Los Angeles</td>
+        </tr>
 </html>
