@@ -5,7 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
 </head>
+<style>
+    .plava-slova {
+        color: blue;
+        font-weight: bold;
+    }
+</style>
 <body>
     <h1>Tables</h1>
+
+    <table border="2" width="50%">
+        <tr style="background-color: lightgreen;">
+            <th style="background-color: green;">Ime</th>
+            <th>Preizme</th>
+            <th>Godine</th>
+        </tr>
+        <tr>
+            <td rowspan="2" style="color: red;">Matija</td>
+            <td>Antolic</td>
+            <td class="plava-slova">22</td>
+        </tr>
+        <tr>
+            <td>Antolic</td>
+            <td class="plava-slova">22</td>
+        </tr>
+        <tr>
+            <tfoot>
+                <td colspan="2">Ukupno</td>
+                <td class="plava-slova">44</td>
+            </tfoot>
+        </tr>
+    </table>
 </body>
 </html>
