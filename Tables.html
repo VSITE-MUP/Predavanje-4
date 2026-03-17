@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
 </head>
+<style>
+    /* Stil za plave slova */
+    .plava-slova {
+        color: blue;
+        font-weight: bold;
+    }
+</style>
+
 <body>
     <h1>Tables</h1>
+    <!-- Jednostavna tablica -->
+    <table border="1" width="50%">
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Godine</th>
+        </tr>
+        <tr>
+            <td>Marko</td>
+            <td>Markovic</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Petar</td>
+            <td>Petrovic</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Ukupno</td>
+                    <td>53</td>
+                </tr>
+            </tfoot>
+        </tr>
+    </table>
+    <br><br><br><br><br>
+    <!-- Tablica sa primjerom rowspan i colspan -->
+    <table border="1" width="50%">
+        <!-- Zaglavlje tablice i inline css -->
+        <tr style="background-color: lightgreen;">
+            <th style="background-color: green;">Ime</th>
+            <th>Prezime</th>
+            <th>Godine</th>
+        </tr>
+        <tr>
+            <!-- Redak sa rowspan atributom -->
+            <td rowspan="2" style="color: red;">Marko</td>
+            <td>Markovic</td>
+            <td class="plava-slova">25</td>
+        </tr>
+        <tr>
+            <td>Petrovic</td>
+            <td class="plava-slova">28</td>
+        </tr>
+        <tr>
+            <tfoot>
+                <tr>
+                    <!-- Redak sa colspan atributom -->
+                    <td colspan="2">Ukupno</td>
+                    <td class="plava-slova">53</td>
+                </tr>
+            </tfoot>
+        </tr>
+    </table>
+
 </body>
+
 </html>
