@@ -3,13 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tablice</title>  
+        <title>Tablice</title>
     </head>
+    <style>
+        .tablica
+        {
+            color: blue;
+            border: 50%;
+            width: 50%;
+            background-color: black;
+        }
+    </style>
     <body>
-        <table>
-            <thead>Linkovi</thead>
+        <h1>Table</h1>
+        <table class="tablica">
+            <tr style="background-color: lightgreen;">
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Godine</th>
+            </tr>
+            <tr>
+                <td style="color:red">Marko</td>
+                <td>Perko</td>
+                <td>1312</td>
+            </tr>
+            <tr>
+                <td>Petar</td>
+                <td>Perkovic</td>
+                <td>67</td>
+            </tr>
         </table>
     </body>
-
-
 </html>
